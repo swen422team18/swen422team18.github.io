@@ -1,0 +1,85 @@
+body {
+    background-position: center;
+    background-image: url("3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1500px 800px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #fff;
+    width: 1000px;
+    height: 700px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+h1.titletext {
+    text-align: center;
+}
+
+.titletextinfo {
+    color: #296CCF;
+    border-color: #5C9DFF;
+}
+
+/* (Begin) styling for the bar and line chart */
+.bar1 {
+    fill: aqua;
+}
+
+.bar1:hover {
+    fill: #5C9DFF;
+}
+
+.bar2 {
+    fill: orange;
+}
+
+.bar2:hover {
+    fill: yellow;
+}
+
+.axis--x path {
+    display: none;
+}
+
+.line1 {
+    fill: none;
+    stroke: royalblue;
+    stroke-width: 3;
+}
+
+.dot1 {
+    fill: royalblue;
+    stroke: royalblue;
+}
+/* (end) styling for the bar and line chart */
+
+/* (Begin) styling for the on demand tool tip for the bar chart */
+#tooltip {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+#tooltip.hidden {
+    display: none;
+}
+
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+/* (end) styling for the on demand tool tip for the bar chart */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Related files are aspect1.css for css, aspect1.js for D3 code -->
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspect 1</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/aspect1.css" />
+</head>
+<body width="900px" height="600px">
+  <h1 class="titletext">Team Performance</h1>
+  <center>The performance of a specific team, both in terms of their final placing in each season, and on how they perform at specific parts of a season (such as early-season, mid-season, at the end of the regular season, or in the finals).</center>
+  <table style="padding:20px"  align="center">
+    <tr>
+      <td>
+          <!-- This section will hidden on load and shown on mouse over event of the bar chart -->
+        <div id="tooltip" class="hidden">
+      			<p><strong><span id="team">Team</span></strong></p>
+      			<p>Ranking: <span id="rank">100</span></p>
+            <p>Game Won: <span id="win">100</span></p>
+      		</div>
+        <svg>
+        </svg>
+      </td>
+      <td>
+          <!-- Filters provided for the user to filter the outcome by year and different part of the season -->
+        <table height="500px" width="150px">
+          <tr>
+            <td valign=top style="font-size:14px; font-weight: bold;color:royalblue">
+              <input type="radio" class="season" name="season" value=1>Early Season<br>
+              <input type="radio" class="season" name="season" value=2>Middle Season<br>
+              <input type="radio" class="season" name="season" value=3>Late Season<br>
+              <input type="radio" class="season" name="season" value=4>Final Series<br>
+              <br><br>
+              <input type="radio" class="year" name="year" value=0 checked>Overall<br>
+              <input type="radio" class="year" name="year" value=2008>2008<br>
+              <input type="radio" class="year" name="year" value=2009>2009<br>
+              <input type="radio" class="year" name="year" value=2010>2010<br>
+              <input type="radio" class="year" name="year" value=2011>2011<br>
+              <input type="radio" class="year" name="year" value=2012>2012<br>
+              <input type="radio" class="year" name="year" value=2013>2013<br>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+    <!-- D3 code for chart generation -->
+  <script src="javascript/aspect1.js"></script>
+
+</body>
+
+</html>

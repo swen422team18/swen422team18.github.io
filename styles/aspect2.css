@@ -1,0 +1,175 @@
+
+body {
+    background-position:center;
+    background-image: url("3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1500px 800px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #fff;
+    width: 1000px;
+    height: 700px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+h1.titletext {
+    text-align: center;
+}
+
+.titletextinfo {
+    color: #296CCF;
+    border-color: #5C9DFF;
+}
+
+
+#skillmap .skills-wrapper {
+    margin-top: 10px;
+    overflow: auto;
+}
+
+#skillmap .skills-sunburst {
+    float: left;
+    width: 500px;
+    margin-left: -80px;
+}
+#skillmap .skills-sunburst svg {
+    font: 11px 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+}
+#skillmap .skills-chart {
+    float: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    margin: 80px 20px 0 0;
+}
+#skillmap .skills-chart .breadcumb-text {
+    font-size: 9px;
+    font-weight: 700;
+}
+#skillmap .skills-chart #skills-chart-line {
+    fill: none;
+    stroke-width: 3.5px;
+}
+#skillmap .skills-chart .axis path,
+#skillmap .skills-chart .axis line {
+    fill: none;
+}
+#skillmap .skills-chart .x-axis path,
+#skillmap .skills-chart .y-axis path {
+    stroke: #444;
+    stroke-width: 1px;
+    shape-rendering: geometricPrecision;
+}
+
+.myButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+    box-shadow:inset 0px 1px 0px 0px #f29c93;
+    background-color:#e38d84;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #d83526;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+}
+.myButton:hover {
+    background-color:#ce0100;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+.bar1 {
+  fill: aqua;
+}
+
+.bar1:hover {
+  fill: #5C9DFF;
+}
+
+.bar2 {
+  fill: orange;
+}
+
+.bar2:hover {
+  fill: yellow;
+}
+
+.axis--x path {
+  display: none;
+}
+
+.line1 {
+  fill: none;
+  stroke: royalblue;
+  stroke-width: 3;
+}
+
+.dot1 {
+  fill: royalblue;
+  stroke: royalblue;
+}
+
+div.main {
+  position: relative;
+  top: 0;
+  right: 100;
+  width: 900px;
+  border: 3px solid #73AD21;
+}
+
+div.chart {
+  position: relative;
+  top: 0;
+  right: 100;
+  width: 900px;
+  border: 3px solid #73AD21;
+}
+
+div.fixed {
+  position: fixed;
+  top: 100px;
+  right: 200x;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+#tooltip {
+				position: absolute;
+				width: 300px;
+				height: auto;
+				padding: 10px;
+				background-color: white;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				pointer-events: none;
+			}
+
+			#tooltip.hidden {
+				display: none;
+			}
+
+			#tooltip p {
+				margin: 0;
+				font-family: sans-serif;
+				font-size: 16px;
+				line-height: 20px;
+			}

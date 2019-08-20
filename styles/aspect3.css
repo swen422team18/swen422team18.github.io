@@ -1,0 +1,130 @@
+
+body {
+    background-image: url("3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1500px 800px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #fff;
+    width: 1000px;
+    height: 700px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+h1.titletext {
+    text-align: center;
+}
+
+.titletextinfo {
+    color: #296CCF;
+    border-color: #5C9DFF;
+}
+
+#pieChart {
+    position:absolute;
+    top:230px;
+    left:300px;
+    width:400px;
+    height: 400px;
+}
+
+
+
+#lineChart {
+    position:absolute;
+    top:230px;
+    left:700px;
+    height: 150px;
+}
+
+#barChart {
+    position:absolute;
+    top:380px;
+    left:700px;
+    height: 250px;
+}
+
+.slice {
+    font-size: 11pt;
+    font-family: "Cookie";
+    fill: black; //svg specific - instead of color
+    font-weight: bold;
+}
+
+/*for line chart*/
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges; //The shape-rendering property is an SVG attribute, used here to make sure our axis and its tick mark lines are pixel-perfect.
+}
+
+.line {
+    fill: none;
+    /*stroke: steelblue;*/
+    stroke-width: 3px;
+}
+
+.dot {
+    /*fill: white;*/
+    /*stroke: steelblue;*/
+    stroke-width: 1.5px;
+}
+
+
+.axis text {
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+.title {
+    font-family: Verdana;
+    font-size: 15px;
+
+}
+
+.xAxis {
+    font-family: verdana;
+    font-size: 11px;
+    fill: black;
+}
+
+.yAxis {
+    font-family: verdana;
+    font-size: 11px;
+    fill: white;
+}
+
+
+table {
+    border-collapse:collapse;
+    border: 0px;
+    font-family: Verdana;
+    color: #5C5558;
+    font-size: 12px;
+    text-align: right;
+}
+
+td {
+    padding-left: 10px;
+}
+
+#lineChartTitle1 {
+    font-family: Verdana;
+    font-size  : 14px;
+    fill       : black;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+#lineChartTitle2 {
+    font-family: Verdana;
+    font-size  : 72px;
+    fill       : grey;
+    text-anchor: middle;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
